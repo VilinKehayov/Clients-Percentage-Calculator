@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: white;
+}
+
+.background-wrapper {
+    width: 580px;
+    height: 300px;
+    background-color: #ccc;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; 
+}
+
+.conteiner {
+    display: block;
+    width: 510px;
+    height: 220px;
+    background-color: white;
+    padding: 6em 3em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.4em;
+    box-shadow: 0 5px 5px -6px grey, 0 3px 7px grey;
+    
+}
+header {
+    display: block;
+    padding-bottom: 1.2em;
+    font-weight: 550;
+    position: absolute;
+    bottom: 65%;
+    font-family: sans-serif;
+    margin: 0;
+    border: 0;
+    
+}
+.inp-wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 55%;
+    justify-content: space-around;
+    gap: 0.9em;
+    flex-direction: row;
+}   
+
+input {
+    font-style: italic;
+}
+
+input[type="number"] {
+    display: flex;
+    font-size: 16px;
+    padding: 0.5em;
+    color: black;
+    border-color: #ccc;
+    outline: none;
+    border-radius: 0.2em;
+}
+
+button {
+    display: flex;
+    background-color: yellow;
+    color: solid black;
+    font-size: 18px;
+    margin: 1em auto 1em auto;
+    border: none;
+    padding: 0.3em 4em;
+    border-radius: 0.3em;
+    font-weight: 550;
+    cursor: pointer;
+
+}
+.clients {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.progress {
+    background-color: lightgrey;
+    border-radius: 5px;
+    height: 25px;
+    width: 425px;
+    display: flex;
+}
+
+.progress-done {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: repeating-linear-gradient(to left, 
+    #0546e0, #1172f9, #4892f9);
+    box-shadow: 0 5px 5px -6px #0546e0, 0 3px 7px #1172f9;
+    border-radius: 5px;
+    color: #fff;
+    height: 100%;
+    width: 0;
+    transition: 1s ease 0.3s;    
+}
+
+
